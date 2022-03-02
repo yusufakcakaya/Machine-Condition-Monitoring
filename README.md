@@ -35,6 +35,9 @@ Week 2
 - Save model
 - Model prediction
 
+Week 3
+- Deployment
+
 
 ## Installation
 
