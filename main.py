@@ -28,12 +28,15 @@ def predict(path):
 
 
 
+# sourcery skip: use-named-expression
 uploaded_file = st.file_uploader("Upload an image", type="png")
+img = Image.open(uploaded_file)
 
-if img := Image.open(uploaded_file):
+if img is not None:
     st.image(img, caption='Uploaded Image.', use_column_width=True)
-
-    if classify := st.button("classify image"):
+    
+    classify = st.button("classify image")
+    if classify :
         st.write("")
         st.write("Classifying...")
         label = predict(img)
