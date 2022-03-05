@@ -29,8 +29,8 @@ if choice == "VGG":
 	st.subheader("VGG-16")
 	image_file = st.file_uploader("Upload Images", type="png",accept_multiple_files = True)
 
-	selected_image = Image.open("prediction_images/" + image_select)
-	st.image(selected_image, caption="Anomaly Detection", use_column_width=True)
+	#selected_image = Image.open("prediction_images/" + image_select)
+	#st.image(selected_image, caption="Anomaly Detection", use_column_width=True)
 
 	if image_file is not None:
 
