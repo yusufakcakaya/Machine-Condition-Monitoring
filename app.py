@@ -20,8 +20,8 @@ def load_image(image_file):
 	img = Image.open(image_file)
 	return img
 
-prediction_images = [f for f in listdir("/Users/yusufakcakaya/GitHub/Machine-Condition-Monitoring/prediction_images/") 
-			if isfile(join("/Users/yusufakcakaya/GitHub/Machine-Condition-Monitoring/prediction_images/", f))]
+prediction_images = [f for f in listdir("./prediction_images/") 
+			if isfile(join("./prediction_images/", f))]
 
 image_select = st.sidebar.selectbox("Chose an image.", prediction_images)
 
@@ -29,7 +29,7 @@ if choice == "VGG":
 	st.subheader("VGG-16")
 	image_file = st.file_uploader("Upload Images", type="png",accept_multiple_files = True)
 
-	selected_image = Image.open("/Users/yusufakcakaya/GitHub/Machine-Condition-Monitoring/prediction_images/" + image_select)
+	selected_image = Image.open("prediction_images/" + image_select)
 	st.image(selected_image, caption="Anomaly Detection", use_column_width=True)
 
 	if image_file is not None:
