@@ -33,7 +33,7 @@ Three different approaches were followed:
 According to the model results, it is observed that the most suitable model for our data set is Random Forest and KNN.
 
 ```
-Classification Report Random Forest: 
+**Classification Report Random Forest: **
                precision    recall  f1-score   support
 
            0       0.91      0.98      0.95       816
@@ -41,10 +41,12 @@ Classification Report Random Forest:
 
     accuracy                           0.92      1110
    macro avg       0.93      0.86      0.89      1110
-weighted avg       0.92      0.92      0.92      1110```
+weighted avg       0.92      0.92      0.92      1110
 
 ```
-Classification Report KNN: 
+
+```
+**Classification Report KNN:** 
                precision    recall  f1-score   support
 
            0       0.92      0.97      0.94       816
@@ -52,7 +54,9 @@ Classification Report KNN:
 
     accuracy                           0.91      1110
    macro avg       0.90      0.86      0.88      1110
-weighted avg       0.91      0.91      0.91      1110```
+weighted avg       0.91      0.91      0.91      1110
+
+```
 
 
 
@@ -67,13 +71,13 @@ weighted avg       0.91      0.91      0.91      1110```
 
     accuracy                           0.97       177
    macro avg       0.97      0.97      0.97       177
-weighted avg       0.97      0.97      0.97       177```
+weighted avg       0.97      0.97      0.97       177
 
-![image](https://user-images.githubusercontent.com/46165841/158359816-829df0ab-9186-4b96-8d0e-e436579334df.png)
+```
 
+![download](https://user-images.githubusercontent.com/46165841/158364392-9d835226-d167-4406-8250-8897dcd8152e.png)
 
-3. **Convolutional autoencoder** - This model is trained on only the normal training dataset. Given any image, it reconstructs the image and it determines whether the image is Normal or Abnormal based on the similairt of the original image and the reconstructed one.
-
+![download (1)](https://user-images.githubusercontent.com/46165841/158364417-cbc642d0-7331-4475-85c1-8cfdadbd2a56.png)
 
 #### Which dataset?
 
@@ -86,11 +90,13 @@ Orijinal dataset can be downloaded on the following link:
 
 Here are sample visuals:
 #### KNN ROC
-![image](https://user-images.githubusercontent.com/46165841/158359109-4bb115ef-1659-4850-b3cc-918dc5b12dda.png)
+![download (3)](https://user-images.githubusercontent.com/46165841/158364490-966e9e18-4a4e-4005-912d-9e2bb2ec1eb3.png)
+
 
 #### Random Forest ROC
-![image](https://user-images.githubusercontent.com/46165841/158359313-d374a126-e8aa-47f0-93be-a0cc9385f34d.png)
+![download (2)](https://user-images.githubusercontent.com/46165841/158364447-cd2793ab-197c-477c-8d3d-247f5470d6e8.png)
 
+***
 
 ### Mission objectives
 
