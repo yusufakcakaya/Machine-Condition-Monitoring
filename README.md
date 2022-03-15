@@ -62,10 +62,11 @@ weighted avg       0.91      0.91      0.91      1110
 
 
 
-2. **Transfer learning** - Convolutional neural networks (CNN) - Takes in an image and uses existing pretrained model `VGG16` to predict  normal or abnormal.
+2. **Transfer learning:** 
+- Convolutional neural networks (CNN) - Takes in an image and uses existing pretrained model `VGG16` to predict  normal or abnormal.
 
 ```
- precision    recall  f1-score   support
+                 precision    recall  f1-score   support
 
     Abnormal       0.95      0.99      0.97        84
       Normal       0.99      0.96      0.97        93
@@ -75,9 +76,12 @@ weighted avg       0.91      0.91      0.91      1110
 weighted avg       0.97      0.97      0.97       177
 
 ```
+Confusion Matrix of Model:
 
 ![download](https://user-images.githubusercontent.com/46165841/158364392-9d835226-d167-4406-8250-8897dcd8152e.png)
 
+
+Learning Curve of Model:
 ![download (1)](https://user-images.githubusercontent.com/46165841/158364417-cbc642d0-7331-4475-85c1-8cfdadbd2a56.png)
 
 #### Which dataset?
