@@ -33,7 +33,7 @@ Three different approaches were followed:
 According to the model results, it is observed that the most suitable model for our data set is Random Forest and KNN.
 
 ```
-**Classification Report Random Forest: **
+Classification Report Random Forest: 
                precision    recall  f1-score   support
 
            0       0.91      0.98      0.95       816
@@ -46,7 +46,7 @@ weighted avg       0.92      0.92      0.92      1110
 ```
 
 ```
-**Classification Report KNN:** 
+Classification Report KNN:
                precision    recall  f1-score   support
 
            0       0.92      0.97      0.94       816
