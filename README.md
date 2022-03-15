@@ -82,6 +82,7 @@ Confusion Matrix of Model:
 
 
 Learning Curve of Model:
+
 ![download (1)](https://user-images.githubusercontent.com/46165841/158364417-cbc642d0-7331-4475-85c1-8cfdadbd2a56.png)
 
 #### Which dataset?
