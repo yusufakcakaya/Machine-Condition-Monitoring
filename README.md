@@ -13,7 +13,8 @@
 - **Intermediate:** These we may have trouble perceiving. These include pitch, beat- related identifiers, note beginnings, ripple patterns, MFCCs, etc.
 - **Low level:** These contain features that humans cannot understand but can only be achieved with the help of machinery. Examples include amplitude envelope,energy, spectral center, spectral flux, zero crossing ratio, etc.
 
-  When we look at waveforms with frequency domain, we can extract band energy ratio, spectral centroid, and spectral flux properties with the help of Fourier Transform.As a result of our research, the features that are important to us are included in the domains I have listed above, and it has been observed that all of them can be accessed at the same time with the Time- frequency representation that includes each of these domains. Mel spectogram will be created with the help of the Short-Time Fourier Transform (STFT) and the desired properties will be obtained from here.
+
+When we look at waveforms with frequency domain, we can extract band energy ratio, spectral centroid, and spectral flux properties with the help of Fourier Transform.As a result of our research, the features that are important to us are included in the domains I have listed above, and it has been observed that all of them can be accessed at the same time with the Time- frequency representation that includes each of these domains. Mel spectogram will be created with the help of the Short-Time Fourier Transform (STFT) and the desired properties will be obtained from here.
 
 ![image](https://user-images.githubusercontent.com/46165841/158340766-f1ef6ee4-12ae-44e9-ab99-494f38e3a11a.png)
 
