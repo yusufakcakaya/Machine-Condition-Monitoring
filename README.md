@@ -19,6 +19,62 @@ When we look at waveforms with frequency domain, we can extract band energy rati
 
 Humans perceive sounds logarithmically. When the sound frequency range is high, it is easy for us to notice these sounds. For example, if we give an example, we can easily detect the difference between 300 hz and 700 hz, but it will not be easy to make this distinction when this range increases from 10000 to 20000. While making this distinction, the mel spectogram is used. The sounds we will be working with are machine sounds and in some places it will be almost difficult to tell the difference. Therefore, while designing the model, using a system separated according to their characteristics, not a human being who distinguishes sounds, indicates that it will be very effective in solving the sample problem. Mel-spectrogram is a spectrogram in which frequencies are converted to mel scale.
 
+Three different approaches were followed:
+
+1. **Supervised Machine Learning :**
+
+  - Logistic Regression
+  - KNN
+  - SVM
+  - Decision Tree
+  - Random Forest
+  - Naive Bayes
+  
+According to the model results, it is observed that the most suitable model for our data set is Random Forest and KNN.
+
+```
+Classification Report Random Forest: 
+               precision    recall  f1-score   support
+
+           0       0.91      0.98      0.95       816
+           1       0.94      0.74      0.83       294
+
+    accuracy                           0.92      1110
+   macro avg       0.93      0.86      0.89      1110
+weighted avg       0.92      0.92      0.92      1110```
+
+```
+Classification Report KNN: 
+               precision    recall  f1-score   support
+
+           0       0.92      0.97      0.94       816
+           1       0.89      0.76      0.82       294
+
+    accuracy                           0.91      1110
+   macro avg       0.90      0.86      0.88      1110
+weighted avg       0.91      0.91      0.91      1110```
+
+
+
+
+2. **Transfer learning** - Convolutional neural networks (CNN) - Takes in an image and uses existing pretrained model `VGG16` to predict  normal or abnormal.
+
+```
+ precision    recall  f1-score   support
+
+    Abnormal       0.95      0.99      0.97        84
+      Normal       0.99      0.96      0.97        93
+
+    accuracy                           0.97       177
+   macro avg       0.97      0.97      0.97       177
+weighted avg       0.97      0.97      0.97       177```
+
+![image](https://user-images.githubusercontent.com/46165841/158359816-829df0ab-9186-4b96-8d0e-e436579334df.png)
+
+
+3. **Convolutional autoencoder** - This model is trained on only the normal training dataset. Given any image, it reconstructs the image and it determines whether the image is Normal or Abnormal based on the similairt of the original image and the reconstructed one.
+
+
 #### Which dataset?
 
 Orijinal dataset can be downloaded on the following link:
@@ -26,6 +82,16 @@ Orijinal dataset can be downloaded on the following link:
 - [Machine Condition Monitoring](https://zenodo.org/record/3384388#.YFIrNXnvJEY)
 
 ***
+### Visuals
+
+Here are sample visuals:
+#### KNN ROC
+![image](https://user-images.githubusercontent.com/46165841/158359109-4bb115ef-1659-4850-b3cc-918dc5b12dda.png)
+
+#### Random Forest ROC
+![image](https://user-images.githubusercontent.com/46165841/158359313-d374a126-e8aa-47f0-93be-a0cc9385f34d.png)
+
+
 ### Mission objectives
 
 Week 1
@@ -51,9 +117,12 @@ Week 3
 
 
 ## Installation
-
 - Pull requests are welcome.
 - or ```https://github.com/yusufakcakaya/Machine-condition-monitoring.git```
 
+
+***
+### Timeline
+Mar 2022
 
 
